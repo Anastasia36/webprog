@@ -1,0 +1,33 @@
+*{
+    background-color: lightgray;
+}
+
+p{
+    margin-right: 150px;
+    font-family: "Comic Sans MS",  "Comic Sans", cursive;
+    font-style: italic;
+    text-align: right;
+    color: blue;
+    font-size: 16px;
+}
+
+.para1{
+    text-align: center;
+    color: red;
+    font-size: 110%;
+    font-family: "Times New Roman", Times, serif;
+}
+
+#odlomak2{
+    text-align: justify;
+    font-family: Verdana, sans-serif;
+}
+
+a{
+    color: gray;
+    text-decoration: none;
+}
+
+a:hover{
+    color: yellow;
+}

@@ -1,0 +1,60 @@
+﻿<html>
+<head>
+    <title>JavaScript</title>
+</head>
+<body>
+<h1>Jednostavna tvorba objekta</h1>
+    <script src="lv4.js"></script>
+    <script>
+        var Marko={ime:"Marko", pasmina:"pudlica", starost:13};
+        var Kruno={ime:"Krunoslav", pasmina:"jazavčar", starost:1};
+        var Drago={ime:"Drago", pasmina:"francuski buldog", starost:3};
+        var Pero={ime:"Pero", pasmina:"dalmatinac", starost:12};
+        document.write(
+        "Ime prvog psa je: " + Marko.ime
+        + ", pasmina: " + Marko.pasmina
+        + " i starost: " + Marko.starost + "<br>");
+        document.write(
+        "Ime drugog psa je: " + Kruno.ime
+        + ", pasmina: " + Kruno.pasmina
+        + " i starost: " + Kruno.starost + "<br>");
+        document.write(
+        "Ime trećeg psa je: " + Drago.ime
+        + ", pasmina: " + Drago.pasmina
+        + " i starost: " + Drago.starost + "<br>");
+        document.write(
+        "Ime četvrtog psa je: " + Pero.ime
+        + ", pasmina: " + Pero.pasmina
+        + " i starost: " + Pero.starost + "<br>");
+    </script>
+    <h1>Tvorba objekta preko razreda (klase)</h1>
+    <script>
+        var tigar = new Macka("tigar", "narančasta", "8", "muško");
+        var macka = new Macka("maca", "crna", "2", "žensko");
+        macka.setDob("13");
+
+        document.write(
+        "Ime prve macke je: " + tigar.ime
+        + ", boja: " + tigar.boja
+        + ", starost: " + tigar.dob 
+        +  ", spol: " + tigar.spol + "<br>");
+
+        document.write(
+        "Ime druge macke je: " + macka.ime
+        + ", boja: " + macka.boja
+        + ", starost: " + macka.dob 
+        +  ", spol: " + macka.spol + "<br>");
+
+        let lastModified = document.lastModified;
+
+        const mojJSON = JSON.stringify(tigar);
+        document.write("Moj JSON: <br>" + mojJSON)
+        
+        document.write(
+            lastModified
+        )
+    </script>
+
+    <p id="lastModified">&nbsp;</p>
+</body>
+</html>
